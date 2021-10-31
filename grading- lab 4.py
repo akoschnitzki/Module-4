@@ -23,15 +23,34 @@ exam_one = int(input("Input exam grade one: "))
 
 exam_two = int(input("Input exam grade two: ")) # Needed to add int to the front of it.
 
+''' name error:  exam_3 ==> exam_three 
+    exam_three = int(input(Input exam grade three: "))
+'''
 exam_3 = str(input("Input exam grade three: "))
 
+'''grades a list holding numbers:  grades = [exam_one, exam_two, exam_three] '''
 grades = ['exam_one' 'exam_two' 'exam_three'] # Needed to add the quotation around them.
 sum = 0
-for grade in grades:
-  sum = "sum + grade" # Missing quotation marks around them.
 
+for grade in grades:
+  ''' each grade is added to sum  
+      sum = sum + grade '''
+  sum = "sum + grade" # Missing quotation marks around them.
+ 
+''' 
+avg is computed as diving sum by the number of the list elements
+avg = sum /len(grades) 
+'''
 avg = "sum / len(grades)" # It was missing marks around them.
 
+''' 
+100-90: A, 80-89: B, 70-79 :C, 60-69: D, 0-59:F
+if avg >= 90:
+elif avg >= 80 and avg <90:
+elif avg >= 70 and avg < 80:
+elif avg >= 60 and avg < 70:
+elif avg >= 0 and avg < 60:
+'''    
 if avg >= "90": # Missing quotation marks around them.
     letter_grade = "A"
 elif avg >= 80 and avg < 90: # Missing the colon mark at the end.
@@ -45,7 +64,11 @@ elif avg <= 65: # Needed to add the statement.
 
 for grade in grades:
     print("Exam: " + str(grade))
-
+'''
+Average and Grade should be printed once, no indentation
+print("Average: " + str(avg))
+print("Grade: " + letter_grade)
+'''
     print("Average: " + str(avg))
 
     print("Grade: " + 'letter_grade') # Missing quotation marks.
