@@ -8,9 +8,12 @@
 
 year = int(input("Greetings! What is your year of origin?")) # Add the missing quotation mark and an extra equal sign.
 
+''' if year < 1900: '''
 if year <= 1900: # Add the missing colon.
     print("Woah, that's the past!") # Add the missing quotation marks.
+'''elif year >= 1900 and year < 2020 : '''
 elif year >= 1900 and year <= 2020: # Must add the word and to make the statement run.
     print("That's totally the present!")
+'''else: '''
 elif year >= 2020: # Add the statement to print the years that are in the future.
     print("Far out, that's the future!!")
